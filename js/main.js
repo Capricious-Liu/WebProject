@@ -16,8 +16,8 @@ window.onload = function () {
     clock_init();
     readData();
     storge.clear();
-}
+};
 
 window.onunload = function () {
     saveData();
-}
+};

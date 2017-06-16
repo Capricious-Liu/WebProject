@@ -60,6 +60,10 @@ function addTodo(msg) {
         '  <button class="destroy"></button>',
         '</div>'
     ].join('');
+    //saveCurrentItem(id,msg);
+
+
+
 
     var label = item.querySelector('.todo-label');
     label.addEventListener('dblclick', function() {
