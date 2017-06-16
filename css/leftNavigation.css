@@ -1,0 +1,55 @@
+#leftNavigation{
+    width:150px;
+
+    background:transparent;
+    position:absolute;
+    left:-150px;
+    top:30%;
+    margin-top: -150px;
+    vertical-align:middle;
+}
+
+#arrow_for_navigation{
+    /*line-height:23px;*/
+    /*background:#09C;*/
+    position:absolute;
+    top:50%;
+    margin-top: -25px;
+    /*设置图片大小*/
+    right:-30px;
+    vertical-align: middle;
+
+    background-image: url("../assets/img/arrow/arrow_right.png");
+    background-size: contain;
+    height: 50px;
+    width: 50px;
+
+}
+
+li{
+    list-style: none;
+}
+
+.pic{
+    height: 100px;
+    width: 100px;
+    margin: 15px 10px 5px -15px;
+    background-color: #af5b5e;
+    background-size: cover;
+}
+
+#save_icon{
+    background-image: url("../assets/img/save_load/save.png");
+}
+
+#load_icon{
+    background-image: url("../assets/img/save_load/load.png");
+}
+
+#clock_icon{
+    background-image: url("../assets/img/clock/clock.png");
+}
+
+.pic:hover{
+    cursor:pointer;
+}
