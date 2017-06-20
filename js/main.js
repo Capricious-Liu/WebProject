@@ -11,7 +11,7 @@ function icon_init() {
 
 
 window.onload = function () {
-    mainNavigation();
+    //mainNavigation();
     todos_init();
     clock_init();
     readData();

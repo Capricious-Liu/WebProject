@@ -19,11 +19,11 @@ function startmove(target, speed) {
 }
 
 function init_icons() {
-    var save_icon = document.getElementById("save_icon");
-    save_icon.addEventListener("click",saveData);
-    var load_icon = document.getElementById("load_icon");
-    load_icon.addEventListener("click",readData);
-    var clock_icon = document.getElementById("clock_icon");
+    // var save_icon = document.getElementById("save_icon");
+    // save_icon.addEventListener("click",saveData);
+    // var load_icon = document.getElementById("load_icon");
+    // load_icon.addEventListener("click",readData);
+    var clock_icon = document.getElementById("clock_icon_h1");
     clock_icon.addEventListener("click",hide_or_show_clock);
 }
 
@@ -34,3 +34,4 @@ function mainNavigation() {
     left_navigation.onmouseout=function (){startmove(-150,-10);};
     init_icons();
 }
+

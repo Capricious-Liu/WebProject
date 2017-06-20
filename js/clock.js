@@ -255,6 +255,9 @@ function clock_init() {
 	});
 
 	hide_or_show_clock();
+
+    var clock_icon = document.getElementById("clock_icon_h1");
+    clock_icon.addEventListener("click",hide_or_show_clock);
 }
 
 function hide_or_show_clock() {

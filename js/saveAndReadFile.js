@@ -3,16 +3,7 @@
  */
 
 
-// function saveCurrentItem(id, msg_current){
-//     var oDate = new Date();
-//     var item = {
-//         msg:msg_current,
-//         time:oDate
-//     };
-//     // console.log(JSON.stringify(item));
-//     storge.setItem(id, JSON.stringify(item));
-//     console.log(storge);
-// }
+
 
 
 // 这里要存json文件
@@ -62,6 +53,8 @@ function readData() {
 
         var value = storge.getItem(id);
         var obj = JSON.parse(value);
+
+
 
         var current_id = addTodo(obj.msg);
         if(obj.value == true){
