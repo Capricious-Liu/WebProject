@@ -15,7 +15,8 @@ window.onload = function () {
     todos_init();
     clock_init();
     readData();
-    storge.clear();
+    showTimeLine();
+    //storge.clear();
 };
 
 window.onunload = function () {

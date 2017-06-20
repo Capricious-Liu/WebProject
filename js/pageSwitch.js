@@ -165,12 +165,12 @@
 
 	//窗口Resize
 	var resizeId;
-	win.resize(function(){
-		clearTimeout(resizeId);
-		resizeId = setTimeout(function(){
-			reBuild();
-		},500);
-	});
+    win.resize(function(){
+        clearTimeout(resizeId);
+        resizeId = setTimeout(function(){
+            reBuild();
+        },500);
+    });
 
 	function reBuild(){
 		var currentHeight = win.height(),

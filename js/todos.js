@@ -111,6 +111,18 @@ function addTodo(msg) {
     }, false);
 
     todoList.insertBefore(item, todoList.firstChild);
+
+    // if(storge.getItem(msg) == null) {
+    //     var oDate = new Date();
+    //     var item_temp = {
+    //         msg:msg,
+    //         time:oDate,
+    //         value:false
+    //     };
+    //
+    //     storge.setItem(msg, JSON.stringify(item_temp)); //!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+    //}
+
     update();
     return id;
 }

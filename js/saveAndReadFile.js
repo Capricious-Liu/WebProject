@@ -29,6 +29,8 @@ function saveData() {
         var msg = label.innerHTML;
         var value = todolists[temp].classList.contains("completed");
 
+       //if(storge.getItem(msg) != null) continue;
+
         var oDate = new Date();
         var item = {
             msg:msg,
@@ -36,8 +38,9 @@ function saveData() {
             value:value
         };
 
+        // storge.setItem(id, JSON.stringify(item));
         storge.setItem(id, JSON.stringify(item));
-        console.log(storge);
+        // console.log(storge);
 
         //storge.setItem(msg,value);
         //data[msg] = todolists[temp].classList.contains('completed');

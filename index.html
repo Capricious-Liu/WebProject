@@ -3,11 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--<link rel="stylesheet" href="http://www.helloweba.com/demo/css/main.css" />-->
     <link href="css/main.css" rel="stylesheet">
     <link href="css/leftNavigation.css" rel="stylesheet">
-    <link href="css/clock.css" rel="stylesheet" />
+    <link href="css/clock.css" rel="stylesheet" >
     <link href="css/pageSwitch.css" rel="stylesheet">
     <link href="css/background.css" rel="stylesheet">
+    <link href="css/timeLine.css" rel="stylesheet">
     <title>Title</title>
 </head>
 <body>
@@ -16,7 +19,6 @@
 
 <div id="container">
     <div class="section active" id="section0">
-
         <div id="leftNavigation">
             <span id="arrow_for_navigation"></span>
             <ul>
@@ -25,9 +27,8 @@
                 <li><div class="pic" id="clock_icon"></div></li>
             </ul>
         </div>
-
         <div class="todoapp">
-            <header class="header" alt="Ctrl+K to show clock!">
+            <header class="header" >
                 <h1>todos</h1>
                 <!-- Add New Item -->
                 <input class="new-todo" type="text" placeholder="What needs to be done?" autofocus>
@@ -37,7 +38,6 @@
                 <input class="toggle-all" type="checkbox">
                 <!-- Show List -->
                 <ul class="todo-list"></ul>
-
                 <footer class="footer">
                     <span class="todo-count"></span>
                     <ul class="filters">
@@ -120,11 +120,20 @@
         </div>
     </div>
     <div class="section" id="section1">
-        <div class="intro">
-            <h1 class="title">Example</h1>
-            <p>HTML markup example to define 4 sections</p>
-            <!--<img src="images/example.png"/>-->
-        </div>
+        <section id="cd-timeline" class="cd-container">
+            <div class="cd-timeline-block">
+                <div class="cd-timeline-img cd-picture">
+                    <img src="assets/img/timeLine/cd-icon-picture.svg" alt="Picture">
+                </div>
+
+                <div class="cd-timeline-content">
+                    <h2>吃饭</h2>
+                    <h2>睡觉</h2>
+                    <h2>打豆豆</h2>
+                    <span class="cd-date">2017-06-19</span>
+                </div>
+            </div>
+        </section>
 
     </div>
 </div>
@@ -142,9 +151,11 @@
 
 <script type="text/javascript" src="lib/jquery.min.js"></script>
 <script type="text/javascript" src="js/pageSwitch.js"></script>
+<script type="text/javascript" src="js/showTimeLine.js"></script>
 
 <script src="js/main.js"></script>
 <script src="js/background.js"></script>
+
 
 
 
